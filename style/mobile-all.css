@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
-/*Cores*/
+/*Variáveis de Cores*/
 :root {
 	--cor-primaria: #e5d5c4;
 	--cor-secundaria: #766759;
 	--cor-terciaria: #2c2623;
 }
-
+/* Reset do estilo do CSS */
 * {
 	padding: 0px;
 	margin: 0px;
@@ -22,15 +22,29 @@ body {
 	height: 100%;
 	background-color: var(--cor-secundaria);
 }
-
+/* Cabeçalho */
 header {
 	background-color: var(--cor-primaria);
 	padding: 10px;
 	color: var(--cor-terciaria);
 	text-align: center;
-	height: 10vh;
+	height: 20vh;
 }
-nav{}
+div.botao {
+	display: inline-flex;
+	flex-direction: row;
+	justify-content: center;
+}
+nav > div > a > img {
+	width: 50px;
+	height: 60px;
+	border-radius: 50%;
+}
+nav > div > p {
+	text-align: center;
+	font-size: 0.2em;
+}
+/* Transição de cores em degrade */
 section#degrade {
 	height: 2vh;
 	background-image: linear-gradient(
@@ -39,6 +53,7 @@ section#degrade {
 		var(--cor-secundaria)
 	);
 }
+
 main {
 	background-color: var(--cor-secundaria);
 	height: 74vh;
