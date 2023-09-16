@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/*Cores*/
+:root {
+	--cor-primaria: #e5d5c4;
+	--cor-secundaria: #766759;
+	--cor-terciaria: #2c2623;
+}
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+html,
+body {
+	font-size: 1em;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--cor-secundaria);
+}
+
+header {
+	background-color: var(--cor-primaria);
+	padding: 10px;
+	color: var(--cor-terciaria);
+	text-align: center;
+	height: 10vh;
+}
+main {
+	background-color: var(--cor-secundaria);
+	height: 70vh;
+}
+iframe {
+	padding: 10px;
+	border-radius: 30px;
+}
+
+footer {
+	background-color: var(--cor-terciaria);
+	color: var(--cor-primaria);
+	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	height: 15vh;
+	justify-content: space-around;
+}
+footer > div#Whatsapp > a > img {
+	height: 70px;
+	width: 70px;
+}
+footer > div#Whatsapp > p {
+	font-size: 0.5em;
+}
+footer > div#Maps > a > img {
+	height: 70px;
+	width: 70px;
+}
+footer > div#Maps > p {
+	font-size: 0.5em;
+}
+footer > div#Contatos {
+	text-align: end;
+	display: block;
+	align-items: end;
+	position: absolute;
+	right: 10px;
+}
