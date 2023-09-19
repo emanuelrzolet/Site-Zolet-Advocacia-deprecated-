@@ -1,4 +1,11 @@
 @charset "UTF-8";
+@font-face {
+	font-family: "Walkway Black";
+	font-style: normal;
+	font-weight: normal;
+	src: local("Walkway Black"),
+		url("../assets/fonts/Walkway_Black.ttf") format("ttf");
+}
 
 /*Variáveis de Cores*/
 :root {
@@ -28,8 +35,19 @@ header {
 	padding: 10px;
 	color: var(--cor-terciaria);
 	text-align: center;
-	height: 15vh;
+	height: 29vh;
 }
+div.logo > img {
+	height: 130px;
+	width: 300px;
+}
+/* Titulo foi substituído pela logo */
+/* header > h1 {
+	font-family: "Walkway Black";
+	font-weight: 100;
+	font-size: 4em;
+	color: var(--cor-terciaria);
+} */
 div.botao {
 	display: inline-flex;
 	flex-direction: row;
@@ -44,26 +62,26 @@ nav > div > p {
 	text-align: center;
 	font-size: 0.2em;
 }
-/* Transição de cores em degrade */
-section#degrade {
+/* Transição de cores em degrade - Excluído*/
+/* section#degrade {
 	height: 2vh;
 	background-image: linear-gradient(
 		to bottom,
 		var(--cor-primaria),
 		var(--cor-secundaria)
 	);
-}
+} */
 
 main {
 	background-color: var(--cor-secundaria);
-	height: 73vh;
+	height: 60vh;
 	display: flex;
 	justify-content: center;
 }
 iframe {
 	/* padding: 10px; */
 	border-radius: 30px;
-	height: 480px;
+	height: 60vh;
 	width: auto;
 	position: relative;
 	top: -30px;
@@ -77,6 +95,7 @@ footer {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
+	height: 10vh;
 }
 footer > div#Whatsapp > a > img {
 	height: 50px;
