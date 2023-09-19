@@ -55,11 +55,18 @@ div.botao {
 	text-decoration: none;
 	color: var(--cor-terciaria);
 }
-div.botao > a > p {
+div.botao > a {
 	text-decoration: none;
+}
+div.botao > a > p {
 	color: var(--cor-terciaria);
 	font-size: 0.6em;
 	font-family: "Walkway Black", Arial, Helvetica, sans-serif;
+}
+nav {
+	display: flex;
+	justify-content: space-evenly;
+	line-height: normal;
 }
 nav > div > a > img {
 	width: 65px;
@@ -89,12 +96,13 @@ main {
 }
 iframe {
 	/* padding: 10px; */
-	border-radius: 30px;
+	border-radius: 10px;
 	height: 60vh;
-	width: auto;
+	width: 75vw;
 	position: relative;
 	top: -20px;
 	box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.527);
+	scroll-behavior: smooth;
 }
 
 footer {
