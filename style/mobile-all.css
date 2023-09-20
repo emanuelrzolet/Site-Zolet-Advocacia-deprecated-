@@ -37,19 +37,17 @@ header {
 	padding: 10px;
 	color: var(--cor-terciaria);
 	text-align: center;
-	height: 29vh;
+	height: 20vh;
 }
-div.logo > img {
-	height: 100px;
-	width: 250px;
-}
+
 div.img {
 	display: contents;
 	position: absolute;
 }
 div.img > img {
 	height: 70%;
-	width: 100%;}
+	width: 100%;
+}
 /* Titulo foi substituído pela logo */
 /* header > h1 {
 	font-family: "Walkway Black";
@@ -76,8 +74,9 @@ nav {
 	display: flex;
 	justify-content: space-evenly;
 	line-height: normal;
+	height: 5vh;
 }
-nav > div > a > img {
+/* nav > div > a > img {
 	width: 65px;
 	height: 65px;
 	border-radius: 50%;
@@ -85,8 +84,8 @@ nav > div > a > img {
 }
 nav > div > p {
 	text-align: center;
-	font-size: 0.2em;
-}
+	font-size: 0.2em; */
+/* } */
 /* Transição de cores em degrade - Excluído*/
 /* section#degrade {
 	height: 2vh;
@@ -99,17 +98,17 @@ nav > div > p {
 
 main {
 	background-color: var(--cor-secundaria);
-	height: 61vh;
+	height: 70vh;
 	display: flex;
 	justify-content: center;
 }
 iframe {
 	/* padding: 10px; */
 	border-radius: 10px;
-	height: 60vh;
+	height: 68vh;
 	width: 75vw;
 	position: relative;
-	top: -20px;
+	top: -10px;
 	box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.527);
 	scroll-behavior: smooth;
 }
@@ -145,42 +144,62 @@ footer > div#Contatos {
 }
 
 /* Botão com hover */
-.button {
-	width: 50px;
-	height: 50px;
-	border-radius: 15px;
-	-webkit-backdrop-filter: blur(10px);
-	backdrop-filter: blur(10px);
-	background-color: var(--cor-secundaria);
-	border: 0px;
+
+.cta {
+	margin-top: 0px;
+	position: relative;
+	margin: auto;
+	padding: 4px 18px;
+	transition: all 0.2s ease;
+	border: none;
+	background: none;
 	cursor: pointer;
-	outline: 0px;
-	padding: 0 2px;
-	font-weight: 600;
-	font-size: 18px;
-	color: white;
-	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  }
-  
-  .backdrop {
+}
+
+.cta:before {
+	content: "";
 	position: absolute;
-	width: 80px;
-	height: 80px;
-	background-color: rgb(147, 147, 182);
-	z-index: -1;
-	top: 50%;
-	left: 50%;
-	border-radius: 15px;
-	transform: translateX(-50%) translateY(-50%);
-	transition: all ease-in-out 0.5s;
-  }
-  
-  .button:hover + .backdrop {
-	top: 48%;
-	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-	transform: rotate(15deg) translateX(-50%) translateY(-50%);
-  }
-  
-  .button:active,.button:active +.backdrop {
-	box-shadow: none;
-  }
+	top: 0;
+	left: 0;
+	display: block;
+	border-radius: 50px;
+	background: var(--cor-secundaria);
+	width: 45px;
+	height: 23px;
+	transition: all 0.3s ease;
+}
+
+.cta span {
+	position: relative;
+	font-family: "Ubuntu", sans-serif;
+	font-size: 0.8em;
+	font-weight: 700;
+	letter-spacing: 0.05em;
+	color: var(--cor-terciaria);
+}
+
+.cta svg {
+	position: relative;
+	top: 0;
+	margin-left: 10px;
+	fill: none;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke: var(--cor-primaria);
+	stroke-width: 2;
+	transform: translateX(-5px);
+	transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+	width: 100%;
+	background: var(--cor-secundaria);
+}
+
+.cta:hover svg {
+	transform: translateX(0);
+}
+
+.cta:active {
+	transform: scale(0.95);
+}
