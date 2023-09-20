@@ -51,6 +51,7 @@ div.img > img {
 	height: 80%;
 	width: 100%;
 	border-radius: 5px;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.363);
 }
 div#img01 {
 	background: white

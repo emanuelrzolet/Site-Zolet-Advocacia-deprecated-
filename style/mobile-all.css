@@ -43,6 +43,13 @@ div.logo > img {
 	height: 100px;
 	width: 250px;
 }
+div.img {
+	display: contents;
+	position: absolute;
+}
+div.img > img {
+	height: 70%;
+	width: 100%;}
 /* Titulo foi substituído pela logo */
 /* header > h1 {
 	font-family: "Walkway Black";
@@ -136,3 +143,44 @@ footer > div#Contatos {
 	text-align: end;
 	font-size: 0.9em;
 }
+
+/* Botão com hover */
+.button {
+	width: 50px;
+	height: 50px;
+	border-radius: 15px;
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	background-color: var(--cor-secundaria);
+	border: 0px;
+	cursor: pointer;
+	outline: 0px;
+	padding: 0 2px;
+	font-weight: 600;
+	font-size: 18px;
+	color: white;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  
+  .backdrop {
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	background-color: rgb(147, 147, 182);
+	z-index: -1;
+	top: 50%;
+	left: 50%;
+	border-radius: 15px;
+	transform: translateX(-50%) translateY(-50%);
+	transition: all ease-in-out 0.5s;
+  }
+  
+  .button:hover + .backdrop {
+	top: 48%;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+	transform: rotate(15deg) translateX(-50%) translateY(-50%);
+  }
+  
+  .button:active,.button:active +.backdrop {
+	box-shadow: none;
+  }
