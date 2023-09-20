@@ -28,6 +28,8 @@ body {
 	width: 100vw;
 	height: 100vh;
 	background-color: white;
+	transition: width 1s, height 1s;
+	transition-timing-function: ease;
 }
 /* Cabeçalho */
 header {
