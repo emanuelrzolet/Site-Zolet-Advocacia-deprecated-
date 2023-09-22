@@ -2,6 +2,11 @@
 
 /* Versão mobile */
 @font-face {
+	font-family: "Voga";
+	src: local("Voga"),
+		url(../assets/fonts/CDType\ -\ Voga\ Medium.otf) format(otf);
+}
+@font-face {
 	font-family: "Walkway Black";
 	font-style: normal;
 	font-weight: normal;

@@ -1,5 +1,10 @@
 @charset "UTF-8";
 @font-face {
+	font-family: "Voga";
+	src: local("Voga"),
+		url(../assets/fonts/CDType\ -\ Voga\ Medium.otf) format(otf);
+}
+@font-face {
 	font-family: "Walkway Black";
 	font-style: normal;
 	font-weight: normal;
@@ -24,7 +29,7 @@
 html,
 body {
 	font-size: 1em;
-	font-family: "Walkway Black", Arial, Helvetica, sans-serif;
+	font-family: "Voga","Walkway Black", Arial, Helvetica, sans-serif;
 	width: 100vw;
 	height: 100vh;
 	background-color: white;
@@ -46,7 +51,7 @@ div.img {
 }
 div.img > img {
 	height: 70%;
-	width: 100%;
+	width: fit-content;
 }
 /* Titulo foi substituído pela logo */
 /* header > h1 {
@@ -68,7 +73,7 @@ div.botao > a {
 div.botao > a > p {
 	color: var(--cor-terciaria);
 	font-size: 0.6em;
-	font-family: "Walkway Black", Arial, Helvetica, sans-serif;
+	font-family: "Voga","Walkway Black", Arial, Helvetica, sans-serif;
 }
 nav {
 	display: flex;
