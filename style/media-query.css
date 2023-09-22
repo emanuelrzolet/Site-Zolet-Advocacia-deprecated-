@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 992) {
+    div.img {
+        display: contents;
+        position: absolute;
+    }
+    div.img > img {
+        height: 100%;
+        width: 100%;
+    }
+	iframe {
+		width: 45vw;
+	}
+}
+/* Telas maiores */
+@media screen and (min-width: 992px) {
+	iframe {
+		width: 45vw;
+	}
+}
